@@ -1,0 +1,10 @@
+﻿<Window x:Class="TTTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Toro Timer" Height="150" Width="170" DataContext="{Binding}" WindowStyle="ToolWindow">
+    <Grid Width="150">
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="12,29,0,0" Name="lblTime" VerticalAlignment="Top" Width="127" />
+        <Button Content="Run" Height="23" HorizontalAlignment="Left" Margin="10,80,0,0" Name="btnRun" VerticalAlignment="Top" Width="50" Click="btnRun_Click" />
+        <Button Content="Reset" Height="23" HorizontalAlignment="Right" Margin="0,79,15,0" Name="btnReset" VerticalAlignment="Top" Width="50" Click="btnReset_Click" />
+    </Grid>
+</Window>
