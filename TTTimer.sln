@@ -1,9 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTTimer", "TTTimer\TTTimer.csproj", "{48FB7EDC-8FF9-40C9-86D6-A0AAFA3DFC51}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupApp", "SetupApp\SetupApp.vdproj", "{73AE8276-339C-4744-8B19-6C51C79A0BCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +13,6 @@ Global
 		{48FB7EDC-8FF9-40C9-86D6-A0AAFA3DFC51}.Debug|x86.Build.0 = Debug|x86
 		{48FB7EDC-8FF9-40C9-86D6-A0AAFA3DFC51}.Release|x86.ActiveCfg = Release|x86
 		{48FB7EDC-8FF9-40C9-86D6-A0AAFA3DFC51}.Release|x86.Build.0 = Release|x86
-		{73AE8276-339C-4744-8B19-6C51C79A0BCF}.Debug|x86.ActiveCfg = Debug
-		{73AE8276-339C-4744-8B19-6C51C79A0BCF}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

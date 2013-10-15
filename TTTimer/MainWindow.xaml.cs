@@ -26,10 +26,16 @@ namespace TTTimer
         public bool _running { get; set; }
         public DispatcherTimer _timer = null;
 
+        public string CurrentTime { 
+            get {
+                TimeSpan curTime = TimeSpan.FromSeconds(_runSecs);
+                return curTime.ToString();
+            } 
+        }
+
         private void UpdateTimer()
         {
-            TimeSpan curTime = TimeSpan.FromSeconds(_runSecs);
-            lblTime.Content = curTime.ToString();
+            lblTime.Content = CurrentTime;
         }
         
         public MainWindow()
@@ -83,6 +89,21 @@ namespace TTTimer
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+
+            e.Cancel = true;
+            base.OnClosing(e);
+        }
+
+        public void DoDblClick()
+        {
+            string title = _running ? "Current Spent Time" : "Nothing";
+            string message = _running ? this.CurrentTime : "";
+            tbIcon.ShowBalloonTip(title, message, Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Info);
         }
     }
 }
